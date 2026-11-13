@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Privater Entwurf: nicht indexieren -->
+  <meta name="robots" content="noindex, nofollow">
+  <title data-i18n="meta.title">Gästehaus Biehler · Doppelzimmer mit Frühstück in Garmisch-Partenkirchen</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Familiengeführtes Gästehaus in Alt-Partenkirchen: vier gemütliche Doppelzimmer mit Dusche/WC und Frühstück in der Stube am grünen Kachelofen.">
+  <meta name="theme-color" content="#f6e4e7">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <!-- Schriften über Bunny Fonts (DSGVO-freundlicher Google-Fonts-Spiegel). Für den echten Auftritt lokal einbinden. -->
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="preconnect" href="https://www.haus-biehler.de">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=fraunces:500,600,400i|petit-formal-script:400&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--
+  Sprachen: Der deutsche Text steht hier im HTML. Elemente mit dem Attribut data-i18n (Inhalt) bzw.
+  data-i18n-attr (Attribut:Schlüssel, z. B. alt oder aria-label) bekommen auf Englisch den Text aus
+  assets/js/i18n.js. Gekennzeichnete Elemente nicht ineinander verschachteln.
+-->
+<a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+
+<!-- Icons (einfache Linien-Icons, 24 × 24) -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m21.5 7-9.5 6.5L2.5 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19.5 10c0 5.5-7.5 11.5-7.5 11.5S4.5 15.5 4.5 10a7.5 7.5 0 0 1 15 0Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m14.5 18-6-6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9.5 18 6-6-6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6.5 9.5 17 4 11.5"/></symbol>
+  <symbol id="i-shower" viewBox="0 0 24 24"><path d="M6 21V7.5A3.5 3.5 0 0 1 9.5 4h2A3.5 3.5 0 0 1 15 7.5"/><path d="M11 11.5a4 4 0 0 1 8 0Z"/><path d="M12.5 14.5v1.2M15 14.5v1.2M17.5 14.5v1.2M13.7 18.2v1.2M16.3 18.2v1.2"/></symbol>
+  <symbol id="i-fridge" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M6 9.5h12M9 5.3v1.6M9 12.3v3.2"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="12.5" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4.5 10h11v3.5a5.5 5.5 0 0 1-11 0Z"/><path d="M15.5 11h1.3a2.3 2.3 0 0 1 0 4.6h-1.7"/><path d="M8 3.5c-.7.8.7 1.7 0 2.6M11.7 3.5c-.7.8.7 1.7 0 2.6M3 21.5h15"/></symbol>
+  <symbol id="i-balcony" viewBox="0 0 24 24"><path d="M7 12V4.5A1.5 1.5 0 0 1 8.5 3h7A1.5 1.5 0 0 1 17 4.5V12M12 3v9"/><path d="M3 12h18M3 21h18M5.5 12v9M9.2 12v9M12 12v9M14.8 12v9M18.5 12v9"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18v-6a2.5 2.5 0 0 1 2.5-2.5h13A2.5 2.5 0 0 1 21 12v6M3 15h18M3 18v2.5M21 18v2.5"/><path d="M6 9.5V7a1.5 1.5 0 0 1 1.5-1.5h9A1.5 1.5 0 0 1 18 7v2.5"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 6.5h10M7.5 18v3M16.5 18v3M8 14.5h.01M16 14.5h.01"/></symbol>
+  <symbol id="i-mug" viewBox="0 0 24 24"><path d="M5 8.5h10V19a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M15 10.5h1.8a2.2 2.2 0 0 1 2.2 2.2v1.6a2.2 2.2 0 0 1-2.2 2.2H15"/><path d="M5 8.5a2.5 2.5 0 0 1 2.6-3.3 3 3 0 0 1 5.1-.3A2.5 2.5 0 0 1 15 8.5M8.5 12v6M11.5 12v6"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M4 11V8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5V11"/><path d="M2.5 13.5a2 2 0 0 1 4 0V15h11v-1.5a2 2 0 0 1 4 0V18h-19Z"/><path d="M5 18v2M19 18v2"/></symbol>
+  <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 10.5h14M8.5 14h.01M15.5 14h.01M8 21l1.5-4M16 21l-1.5-4"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16.5V13l1.8-4.6A2 2 0 0 1 7.7 7h8.6a2 2 0 0 1 1.9 1.4L20 13v3.5a1 1 0 0 1-1 1h-1.4M4 16.5a1 1 0 0 0 1 1h1.4M9.6 17.5h4.8M4 13h16"/><circle cx="8" cy="17.5" r="1.6"/><circle cx="16" cy="17.5" r="1.6"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2Z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+  <symbol id="i-sign" viewBox="0 0 24 24"><path d="M12 3v18M8.5 21h7"/><path d="M12 5h6l2 2-2 2h-6"/><path d="M12 11H6l-2 2 2 2h6"/></symbol>
+  <symbol id="i-church" viewBox="0 0 24 24"><path d="M12 2v2.5M10.8 3.2h2.4"/><path d="M12 4.5c-2.6 1.7-3.6 3.6-2.4 5.5h4.8c1.2-1.9.2-3.8-2.4-5.5Z"/><path d="M10 10v2.5h4V10"/><path d="M6 21v-6.5l6-2 6 2V21M4 21h16"/><path d="M10.5 21v-2.8a1.5 1.5 0 0 1 3 0V21"/></symbol>
+  <symbol id="i-houses" viewBox="0 0 24 24"><path d="M3 21V10l4.5-4L12 10v11"/><path d="M12 21v-9l4.5-4 4.5 4v9"/><path d="M2 21h20M6 13.5h3M6 17h3M15 15h3"/></symbol>
+  <symbol id="i-museum" viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M4 21h16M5.5 9.5V18M9.8 9.5V18M14.2 9.5V18M18.5 9.5V18M3.5 18h17"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" data-i18n-attr="aria-label:brand.aria" aria-label="Gästehaus Biehler – zum Seitenanfang">
+      <span class="brand-name">Haus Biehler</span>
+      <span class="brand-tag"><span class="brand-tag-long" data-i18n="brand.tagPrefix">Gästehaus in </span>Garmisch-Partenkirchen</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:nav.aria" aria-label="Hauptnavigation">
+      <ul>
+        <li class="nav-mobile"><a href="#willkommen" data-i18n="nav.welcome">Willkommen</a></li>
+        <li><a href="#zimmer" data-i18n="nav.rooms">Zimmer</a></li>
+        <li><a href="#preise" data-i18n="nav.prices">Preise</a></li>
+        <li class="nav-mobile"><a href="#anfrage" data-i18n="nav.booking">Anfrage</a></li>
+        <li><a href="#anreise" data-i18n="nav.travel">Anreise</a></li>
+        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <p class="nav-contact">
+        <a href="tel:+49882173892"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="phone.display">08821 73892</span></a>
+        <a href="mailto:info@haus-biehler.de"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>info@haus-biehler.de</a>
+      </p>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" lang="de" aria-pressed="true" aria-label="Deutsch">DE</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+      <a class="header-phone" href="tel:+49882173892" data-i18n-attr="aria-label:phone.call" aria-label="Anrufen: 08821 73892">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="phone.display">08821 73892</span>
+      </a>
+      <a class="btn btn-primary btn-sm header-cta" href="#anfrage" data-i18n="cta.enquire">Anfragen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg><span class="sr-only">Menü öffnen</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="inhalt">
+
+  <!-- ============ Start ============ -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="hero-media">
+        <figure class="hero-main">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/hausbiehler-eingang-1024x683.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/hausbiehler-eingang-768x512.jpg 768w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/hausbiehler-eingang-1024x683.jpg 1024w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/hausbiehler-eingang.jpg 1080w"
+               sizes="(min-width: 960px) 640px, 100vw"
+               width="1080" height="720" fetchpriority="high"
+               data-i18n-attr="alt:hero.img.house"
+               alt="Das Gästehaus Biehler in der Sonnenbergstraße: weißes Haus mit Lüftlmalerei, grünen Fensterläden und dunklem Holzbalkon">
+        </figure>
+        <figure class="hero-side">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer14-768x512.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer14-300x200.jpg 300w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer14-768x512.jpg 768w"
+               sizes="320px" width="1200" height="800" loading="lazy" decoding="async"
+               data-i18n-attr="alt:hero.img.room"
+               alt="Gemütliches Doppelzimmer mit Holzdecke und Bettwäsche mit roten Tupfen">
+        </figure>
+        <figure class="hero-side hero-side--detail">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-lampe-zimmer-1024x427.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-lampe-zimmer-768x320.jpg 768w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-lampe-zimmer-1024x427.jpg 1024w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-lampe-zimmer.jpg 1920w"
+               sizes="560px" width="1920" height="800" loading="lazy" decoding="async"
+               data-i18n-attr="alt:hero.img.lamp"
+               alt="Hirschgeweih-Lampe über einem Bett">
+        </figure>
+      </div>
+
+      <div class="hero-text">
+        <h1 id="hero-title" data-i18n="hero.title"><span class="script">Grüß Gott</span> und herzlich willkommen im Gästehaus Biehler</h1>
+        <p class="lead" data-i18n="hero.lead">Vier gemütliche Doppelzimmer mitten in Alt-Partenkirchen – und morgens Frühstück in unserer Stube am grünen Kachelofen.</p>
+        <p class="hero-price"><strong data-i18n="price.40">40&nbsp;€</strong><span data-i18n="hero.priceUnit">pro Person und Nacht,<br>mit Frühstück</span></p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#anfrage" data-i18n="cta.enquire">Anfragen</a>
+          <a class="btn btn-ghost" href="#zimmer" data-i18n="hero.seeRooms">Zimmer ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Willkommen / Familie ============ -->
+  <section class="section welcome" id="willkommen" aria-labelledby="welcome-title">
+    <div class="container welcome-grid">
+      <div class="welcome-media">
+        <figure class="photo photo--stube">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/gaestehaus-biehler-in-garmisch-partenkirchen04-768x512.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/gaestehaus-biehler-in-garmisch-partenkirchen04-300x200.jpg 300w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/gaestehaus-biehler-in-garmisch-partenkirchen04-768x512.jpg 768w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/gaestehaus-biehler-in-garmisch-partenkirchen04.jpg 800w"
+               sizes="(min-width: 960px) 540px, 100vw" width="800" height="533" loading="lazy" decoding="async"
+               data-i18n-attr="alt:welcome.img.stube"
+               alt="Die Stube der Familie Biehler mit grünem Kachelofen, Holzdecke und gedeckten Frühstückstischen">
+          <figcaption data-i18n="welcome.caption">Unsere Stube mit dem grünen Kachelofen – hier gibt’s jeden Morgen Frühstück.</figcaption>
+        </figure>
+        <figure class="photo photo--tracht">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/trachtgross-202x300.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/trachtgross-202x300.jpg 202w,
+                       https://www.haus-biehler.de/wp-content/uploads/2017/03/trachtgross.jpg 403w"
+               sizes="180px" width="403" height="600" loading="lazy" decoding="async"
+               data-i18n-attr="alt:welcome.img.tracht"
+               alt="Zwei Kinder in Tracht, mit Dirndl und Lederhose">
+        </figure>
+      </div>
+
+      <div class="welcome-text">
+        <p class="eyebrow" data-i18n="welcome.eyebrow">Familie Biehler</p>
+        <h2 id="welcome-title" data-i18n="welcome.title">Gastfreundschaft in der dritten Generation</h2>
+        <p data-i18n="welcome.p1">Unser Haus in der Sonnenbergstraße liegt mitten im Herzen von Alt-Partenkirchen. Gäste haben bei uns Tradition: Die Vermietung führen wir inzwischen in der dritten Generation weiter.</p>
+        <p data-i18n="welcome.p2">Bei uns wohnen Sie familiär und gemütlich, in einem von vier Doppelzimmern im ländlichen Stil. Morgens wartet das Frühstück in unserer Stube am grünen Kachelofen – und wenn Sie einen Tipp für den Tag brauchen, fragen Sie uns einfach.</p>
+        <p data-i18n="welcome.p3">Die Wanderwege rund um den Wank, die Wallfahrtskirche St.&nbsp;Anton und die historische Ludwigstraße mit dem Heimatmuseum liegen ganz in der Nähe. Und in den traditionsbewussten Gasthäusern, keine fünf Minuten entfernt, verwöhnt man Sie mit bayerischen Schmankerln, Musik und Schuhplattlern.</p>
+        <p class="signature" data-i18n="welcome.signature">Ihre Familie Biehler</p>
+      </div>
+    </div>
+
+    <ul class="container facts">
+      <li>
+        <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bed"/></svg></span>
+        <strong data-i18n="facts.rooms.title">4 Doppelzimmer</strong>
+        <span data-i18n="facts.rooms.text">mit Dusche/WC, Kühlschrank und Kabel-TV</span>
+      </li>
+      <li>
+        <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg></span>
+        <strong data-i18n="facts.breakfast.title">Frühstück in der Stube</strong>
+        <span data-i18n="facts.breakfast.text">am grünen Kachelofen</span>
+      </li>
+      <li>
+        <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg></span>
+        <strong data-i18n="facts.bus.title">Ein Katzensprung zum Bus</strong>
+        <span data-i18n="facts.bus.text">mit der Kurkarte fahren Sie kostenlos</span>
+      </li>
+      <li>
+        <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-mug"/></svg></span>
+        <strong data-i18n="facts.inns.title">Gasthäuser in 5 Minuten</strong>
+        <span data-i18n="facts.inns.text">mit bayerischen Schmankerln und Musik</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ Zimmer ============ -->
+  <section class="section rooms" id="zimmer" aria-labelledby="rooms-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="rooms.eyebrow">Zimmer</p>
+        <h2 id="rooms-title" data-i18n="rooms.title">Unsere vier Doppelzimmer</h2>
+        <p class="section-sub" data-i18n="rooms.sub">Gemütlich im ländlichen Stil – Sie werden staunen, wir versprechen nicht zu viel.</p>
+      </header>
+
+      <nav class="room-jump" data-i18n-attr="aria-label:rooms.jumpAria" aria-label="Direkt zum Zimmer">
+        <a href="#kramerblick">Kramerblick</a>
+        <a href="#alpenblick">Alpenblick</a>
+        <a href="#wankblick">Wankblick</a>
+        <a href="#werdenfels">Werdenfels</a>
+      </nav>
+
+      <p class="rooms-common">
+        <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+        <span data-i18n="rooms.common">In jedem Zimmer: Dusche/WC, Kühlschrank und Kabel-TV, Frühstück inklusive. Kramerblick, Alpenblick und Wankblick haben einen Balkon.</span>
+      </p>
+
+      <!-- Kramerblick -->
+      <article class="room" id="kramerblick" aria-labelledby="kramerblick-title">
+        <div class="room-media">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" tabindex="0" role="group" data-i18n-attr="aria-label:room.k.photos" aria-label="Fotos vom Zimmer Kramerblick">
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer07-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer07-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer07-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer07.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.k.img1"
+                     alt="Zimmer Kramerblick: Doppelbett aus Holz mit Blumenmalerei, holzvertäfelte Wände">
+                <figcaption data-i18n="carousel.room">Zimmer</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer09-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer09-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer09-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer09.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.k.img2"
+                     alt="Bad im Zimmer Kramerblick mit Waschbecken, WC und Dusche">
+                <figcaption data-i18n="carousel.bath">Bad mit Dusche/WC</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn prev" type="button" disabled data-i18n-attr="aria-label:carousel.prev" aria-label="Vorheriges Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+            <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:carousel.next" aria-label="Nächstes Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+            <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <p class="room-kicker" data-i18n="room.k.kicker">Doppelzimmer · Blick zum Kramer</p>
+          <h3 id="kramerblick-title">Kramerblick</h3>
+          <p data-i18n="room.k.text">Der Name verrät’s: Von hier schaut man hinüber zum Kramer, der sich über Garmisch erhebt. Holzvertäfelte Wände und ein Bauernbett mit Blumenmalerei machen das Zimmer richtig gemütlich.</p>
+          <ul class="features">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-balcony"/></svg><span data-i18n="feat.balcony">Balkon</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shower"/></svg><span data-i18n="feat.shower">Dusche/WC</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg><span data-i18n="feat.fridge">Kühlschrank</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-tv"/></svg><span data-i18n="feat.tv">Kabel-TV</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg><span data-i18n="feat.breakfast">Frühstück inklusive</span></li>
+          </ul>
+          <div class="room-foot">
+            <p class="room-price"><span class="amount" data-i18n="price.40">40&nbsp;€</span><span class="unit" data-i18n="room.priceUnit">pro Person und Nacht<br>mit Frühstück</span></p>
+            <a class="btn btn-primary" href="#anfrage" data-room="Kramerblick" data-i18n="room.k.cta">Kramerblick anfragen</a>
+          </div>
+          <p class="room-note" data-i18n="room.note">Zu zweit 80&nbsp;€ pro Nacht · ab 14 Nächten 35&nbsp;€ pro Person</p>
+        </div>
+      </article>
+
+      <!-- Alpenblick -->
+      <article class="room" id="alpenblick" aria-labelledby="alpenblick-title">
+        <div class="room-media">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" tabindex="0" role="group" data-i18n-attr="aria-label:room.a.photos" aria-label="Fotos vom Zimmer Alpenblick">
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer13-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer13-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer13-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer13.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.a.img1"
+                     alt="Zimmer Alpenblick: Doppelbett unter holzverkleideter Dachschräge, Fenstertür und kleiner Tisch mit Blumen">
+                <figcaption data-i18n="carousel.room">Zimmer</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer11-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer11-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer11-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer11.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.a.img2"
+                     alt="Bad im Zimmer Alpenblick mit Waschbecken, Föhn und Dusche">
+                <figcaption data-i18n="carousel.bath">Bad mit Dusche/WC</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn prev" type="button" disabled data-i18n-attr="aria-label:carousel.prev" aria-label="Vorheriges Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+            <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:carousel.next" aria-label="Nächstes Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+            <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <p class="room-kicker" data-i18n="room.a.kicker">Doppelzimmer · Bergblick</p>
+          <h3 id="alpenblick-title">Alpenblick</h3>
+          <p data-i18n="room.a.text">Mit Blick auf die Berge, unter einer holzverkleideten Dachschräge – und mit einem kleinen Tisch, an dem der Kaffee am Nachmittag gleich doppelt so gut schmeckt.</p>
+          <ul class="features">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-balcony"/></svg><span data-i18n="feat.balcony">Balkon</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shower"/></svg><span data-i18n="feat.shower">Dusche/WC</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg><span data-i18n="feat.fridge">Kühlschrank</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-tv"/></svg><span data-i18n="feat.tv">Kabel-TV</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg><span data-i18n="feat.breakfast">Frühstück inklusive</span></li>
+          </ul>
+          <div class="room-foot">
+            <p class="room-price"><span class="amount" data-i18n="price.40">40&nbsp;€</span><span class="unit" data-i18n="room.priceUnit">pro Person und Nacht<br>mit Frühstück</span></p>
+            <a class="btn btn-primary" href="#anfrage" data-room="Alpenblick" data-i18n="room.a.cta">Alpenblick anfragen</a>
+          </div>
+          <p class="room-note" data-i18n="room.note">Zu zweit 80&nbsp;€ pro Nacht · ab 14 Nächten 35&nbsp;€ pro Person</p>
+        </div>
+      </article>
+
+      <!-- Wankblick -->
+      <article class="room" id="wankblick" aria-labelledby="wankblick-title">
+        <div class="room-media">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" tabindex="0" role="group" data-i18n-attr="aria-label:room.w.photos" aria-label="Fotos vom Zimmer Wankblick">
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer18-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer18-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer18-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer18.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.w.img1"
+                     alt="Zimmer Wankblick: helles Doppelzimmer mit Holzbett und großer Fenstertür">
+                <figcaption data-i18n="carousel.room">Zimmer</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer20-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer20-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer20-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer20.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.w.img2"
+                     alt="Bad im Zimmer Wankblick mit Dusche, Waschbecken und Föhn">
+                <figcaption data-i18n="carousel.bath">Bad mit Dusche/WC</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn prev" type="button" disabled data-i18n-attr="aria-label:carousel.prev" aria-label="Vorheriges Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+            <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:carousel.next" aria-label="Nächstes Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+            <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <p class="room-kicker" data-i18n="room.w.kicker">Doppelzimmer · Blick zum Wank</p>
+          <h3 id="wankblick-title">Wankblick</h3>
+          <p data-i18n="room.w.text">Hell und freundlich, mit Blick hinauf zum Wank, dem Berg gleich über Partenkirchen. Die Wanderwege rund um den Wank beginnen ganz in der Nähe.</p>
+          <ul class="features">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-balcony"/></svg><span data-i18n="feat.balcony">Balkon</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shower"/></svg><span data-i18n="feat.shower">Dusche/WC</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg><span data-i18n="feat.fridge">Kühlschrank</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-tv"/></svg><span data-i18n="feat.tv">Kabel-TV</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg><span data-i18n="feat.breakfast">Frühstück inklusive</span></li>
+          </ul>
+          <div class="room-foot">
+            <p class="room-price"><span class="amount" data-i18n="price.40">40&nbsp;€</span><span class="unit" data-i18n="room.priceUnit">pro Person und Nacht<br>mit Frühstück</span></p>
+            <a class="btn btn-primary" href="#anfrage" data-room="Wankblick" data-i18n="room.w.cta">Wankblick anfragen</a>
+          </div>
+          <p class="room-note" data-i18n="room.note">Zu zweit 80&nbsp;€ pro Nacht · ab 14 Nächten 35&nbsp;€ pro Person</p>
+        </div>
+      </article>
+
+      <!-- Werdenfels -->
+      <article class="room" id="werdenfels" aria-labelledby="werdenfels-title">
+        <div class="room-media">
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" tabindex="0" role="group" data-i18n-attr="aria-label:room.d.photos" aria-label="Fotos vom Zimmer Werdenfels">
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer21-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer21-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer21-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer21.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.d.img1"
+                     alt="Zimmer Werdenfels unterm Dach: Doppelbett, Dachfenster und Sitzecke mit blauem Sofa">
+                <figcaption data-i18n="carousel.room">Zimmer</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer25-768x512.jpg"
+                     srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer25-768x512.jpg 768w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer25-1024x683.jpg 1024w,
+                             https://www.haus-biehler.de/wp-content/uploads/2017/03/haus-biehler-zimmer25.jpg 1200w"
+                     sizes="(min-width: 960px) 620px, 100vw" width="1200" height="800" loading="lazy" decoding="async"
+                     data-i18n-attr="alt:room.d.img2"
+                     alt="Bad im Zimmer Werdenfels mit Dusche und WC">
+                <figcaption data-i18n="carousel.bath">Bad mit Dusche/WC</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn prev" type="button" disabled data-i18n-attr="aria-label:carousel.prev" aria-label="Vorheriges Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+            <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:carousel.next" aria-label="Nächstes Foto"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+            <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+          </div>
+        </div>
+        <div class="room-body">
+          <p class="room-kicker" data-i18n="room.d.kicker">Doppelzimmer · unterm Dach</p>
+          <h3 id="werdenfels-title">Werdenfels</h3>
+          <p data-i18n="room.d.text">Unser Zimmer unterm Dach, benannt nach dem Werdenfelser Land. Einen Balkon hat es nicht – dafür Dachfenster, viel Holz und eine gemütliche Sitzecke mit Sofa.</p>
+          <ul class="features">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-sofa"/></svg><span data-i18n="feat.sofa">Sitzecke mit Sofa</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shower"/></svg><span data-i18n="feat.shower">Dusche/WC</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg><span data-i18n="feat.fridge">Kühlschrank</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-tv"/></svg><span data-i18n="feat.tv">Kabel-TV</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg><span data-i18n="feat.breakfast">Frühstück inklusive</span></li>
+          </ul>
+          <div class="room-foot">
+            <p class="room-price"><span class="amount" data-i18n="price.40">40&nbsp;€</span><span class="unit" data-i18n="room.priceUnit">pro Person und Nacht<br>mit Frühstück</span></p>
+            <a class="btn btn-primary" href="#anfrage" data-room="Werdenfels" data-i18n="room.d.cta">Werdenfels anfragen</a>
+          </div>
+          <p class="room-note" data-i18n="room.note">Zu zweit 80&nbsp;€ pro Nacht · ab 14 Nächten 35&nbsp;€ pro Person</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ Wohlfühlen wie Dahoam (Gedicht = Ausstattung) ============ -->
+  <!-- Die Verse bleiben in beiden Sprachen im Original (lang="de"); übersetzt werden nur die Überschriften. -->
+  <section class="section dahoam" id="ausstattung" aria-labelledby="dahoam-title">
+    <div class="container">
+      <header class="section-head center">
+        <h2 id="dahoam-title" class="script-title" lang="de">Wohlfühlen wie Dahoam</h2>
+        <p class="ornament" aria-hidden="true"><svg class="icon"><use href="#i-heart"/></svg></p>
+        <p class="section-sub" data-i18n="dahoam.sub">Was in jedem Zimmer dabei ist, haben wir einmal in Reime gefasst:</p>
+      </header>
+
+      <ol class="verses">
+        <li>
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-shower"/></svg></span>
+          <h3 data-i18n="verse.shower.title">Dusche und WC im Zimmer</h3>
+          <p class="verse" lang="de">Etagendusche, diese Zeiten sind vorbei,<br>DU/WC sind in jedem Zimmer, nur so nebenbei.</p>
+        </li>
+        <li>
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg></span>
+          <h3 data-i18n="verse.fridge.title">Eigener Kühlschrank</h3>
+          <p class="verse" lang="de">Sogar ein Kühlschrank befindet sich dahier,<br>damit sich’s gut trinken lässt, das gekühlte Bier.</p>
+        </li>
+        <li>
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-balcony"/></svg></span>
+          <h3 data-i18n="verse.balcony.title">Balkon – außer im Zimmer Werdenfels</h3>
+          <p class="verse" lang="de">Dazu gehört auch ein Balkon (Zimmer 4 ohne Balkon),<br>um die schöne Aussicht zu genießen, wussten Sie das schon?</p>
+        </li>
+        <li>
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-tv"/></svg></span>
+          <h3 data-i18n="verse.tv.title">Kabelfernsehen</h3>
+          <p class="verse" lang="de">Auch das Kabel-Fernseh darf nicht fehlen,<br>denn vom Bett aus kann man die Programme wählen.</p>
+        </li>
+        <li>
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg></span>
+          <h3 data-i18n="verse.breakfast.title">Frühstück in der Stube</h3>
+          <p class="verse" lang="de">Das Frühstück gibt’s in Biehler’s gemütlicher Stube,<br>das ist klar, das weiß jeder, der bei uns schon einmal war.</p>
+        </li>
+        <li class="verse-call">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <h3 data-i18n="verse.call.title">Gleich anrufen</h3>
+          <p class="verse" lang="de">Nicht lange überlegen, und ran an’s Telefon:<br><a href="tel:+49882173892">08821 / sieben, drei, acht, neun, zwei</a>,<br>und gleich reservieren, denn hoffentlich ist noch was frei.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Preise ============ -->
+  <section class="section prices" id="preise" aria-labelledby="prices-title">
+    <div class="container prices-grid">
+      <div class="prices-intro">
+        <p class="eyebrow" data-i18n="prices.eyebrow">Preise</p>
+        <h2 id="prices-title" data-i18n="prices.title">Unsere Preise</h2>
+        <p data-i18n="prices.text">Wir würden uns sehr freuen, Sie in unserem Haus begrüßen zu dürfen. Bei uns gilt ein Preis für alle Zimmer – das Frühstück ist immer dabei.</p>
+        <ul class="checklist">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="prices.min">Mindestaufenthalt 2 Nächte</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="prices.single">Doppelzimmer zur Einzelbelegung auf Anfrage</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="prices.insurance">Bitte denken Sie an eine Reiserücktrittsversicherung</span></li>
+        </ul>
+      </div>
+
+      <div class="prices-side">
+        <div class="price-cards">
+          <div class="price-card">
+            <p class="price-label" data-i18n="prices.from2">ab 2 Nächten</p>
+            <p class="price-amount" data-i18n="price.40">40&nbsp;€</p>
+            <p class="price-unit" data-i18n="prices.unit">pro Person und Nacht, mit Frühstück</p>
+          </div>
+          <div class="price-card price-card--long">
+            <p class="price-label" data-i18n="prices.from14">ab 14 Nächten</p>
+            <p class="price-amount" data-i18n="price.35">35&nbsp;€</p>
+            <p class="price-unit" data-i18n="prices.unit">pro Person und Nacht, mit Frühstück</p>
+          </div>
+        </div>
+        <p class="price-example">
+          <span class="price-example-label" data-i18n="prices.exampleLabel">Zum Beispiel</span>
+          <span data-i18n="prices.example">Zu zweit, 5 Nächte: 2 × 5 × 40&nbsp;€ = <strong>400&nbsp;€</strong> inklusive Frühstück</span>
+        </p>
+        <a class="btn btn-primary btn-block" href="#anfrage" data-i18n="prices.cta">Ihren Preis berechnen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Anfrage mit Preisrechner (Prototyp: verschickt nichts) ============ -->
+  <section class="section booking" id="anfrage" aria-labelledby="booking-title">
+    <div class="container booking-grid">
+      <div class="booking-main">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="booking.eyebrow">Anfrage</p>
+          <h2 id="booking-title" data-i18n="booking.title">Ihr Aufenthalt bei uns</h2>
+          <p class="section-sub" data-i18n="booking.sub">Reisedaten wählen, Preis sehen und unverbindlich anfragen – wir melden uns persönlich bei Ihnen.</p>
+        </header>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <fieldset class="form-card">
+            <legend><span class="step" aria-hidden="true">1</span><span data-i18n="booking.step1">Wann kommen Sie?</span></legend>
+            <div class="field-row field-row--dates">
+              <div class="field">
+                <label for="b-arrival"><span data-i18n="booking.arrival">Anreise</span><span class="req" aria-hidden="true"> *</span></label>
+                <input type="date" id="b-arrival" name="anreise" required aria-describedby="b-arrival-error">
+                <p class="field-error" id="b-arrival-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="b-departure"><span data-i18n="booking.departure">Abreise</span><span class="req" aria-hidden="true"> *</span></label>
+                <input type="date" id="b-departure" name="abreise" required aria-describedby="b-departure-error">
+                <p class="field-error" id="b-departure-error" hidden></p>
+              </div>
+            </div>
+            <div class="field field--narrow">
+              <label for="b-guests" data-i18n="booking.guests">Personen</label>
+              <select id="b-guests" name="personen">
+                <option value="1" data-i18n="booking.guests.1">1 Person</option>
+                <option value="2" selected data-i18n="booking.guests.2">2 Personen</option>
+                <option value="3" data-i18n="booking.guests.3">3 Personen</option>
+                <option value="4" data-i18n="booking.guests.4">4 Personen</option>
+                <option value="5" data-i18n="booking.guests.5">5 Personen</option>
+                <option value="6" data-i18n="booking.guests.6">6 Personen</option>
+                <option value="7" data-i18n="booking.guests.7">7 Personen</option>
+                <option value="8" data-i18n="booking.guests.8">8 Personen</option>
+              </select>
+            </div>
+            <div class="quote" id="b-quote" aria-live="polite"></div>
+          </fieldset>
+
+          <fieldset class="form-card">
+            <legend><span class="step" aria-hidden="true">2</span><span data-i18n="booking.step2">Haben Sie einen Zimmerwunsch?</span></legend>
+            <p class="field-hint" data-i18n="booking.roomsHint">Freiwillig, gern auch mehrere. Ob Ihr Wunschzimmer frei ist, erfahren Sie in unserer Antwort.</p>
+            <div class="room-options">
+              <label class="room-option"><input type="checkbox" name="zimmer" value="Kramerblick"><span class="room-option-name">Kramerblick</span><span class="room-option-meta" data-i18n="booking.room.balcony">mit Balkon</span></label>
+              <label class="room-option"><input type="checkbox" name="zimmer" value="Alpenblick"><span class="room-option-name">Alpenblick</span><span class="room-option-meta" data-i18n="booking.room.balcony">mit Balkon</span></label>
+              <label class="room-option"><input type="checkbox" name="zimmer" value="Wankblick"><span class="room-option-name">Wankblick</span><span class="room-option-meta" data-i18n="booking.room.balcony">mit Balkon</span></label>
+              <label class="room-option"><input type="checkbox" name="zimmer" value="Werdenfels"><span class="room-option-name">Werdenfels</span><span class="room-option-meta" data-i18n="booking.room.attic">unterm Dach, ohne Balkon</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-card">
+            <legend><span class="step" aria-hidden="true">3</span><span data-i18n="booking.step3">Ihre Angaben</span></legend>
+            <div class="field field--narrow">
+              <label for="b-salutation" data-i18n="booking.salutation">Anrede</label>
+              <select id="b-salutation" name="anrede" autocomplete="honorific-prefix">
+                <option value="" data-i18n="booking.salutation.none">Bitte wählen</option>
+                <option value="Frau" data-i18n="booking.salutation.ms">Frau</option>
+                <option value="Herr" data-i18n="booking.salutation.mr">Herr</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-first"><span data-i18n="booking.firstName">Vorname</span><span class="req" aria-hidden="true"> *</span></label>
+                <input type="text" id="b-first" name="vorname" required autocomplete="given-name" aria-describedby="b-first-error">
+                <p class="field-error" id="b-first-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="b-last"><span data-i18n="booking.lastName">Nachname</span><span class="req" aria-hidden="true"> *</span></label>
+                <input type="text" id="b-last" name="nachname" required autocomplete="family-name" aria-describedby="b-last-error">
+                <p class="field-error" id="b-last-error" hidden></p>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-email"><span data-i18n="booking.email">E-Mail</span><span class="req" aria-hidden="true"> *</span></label>
+                <input type="email" id="b-email" name="email" required autocomplete="email" aria-describedby="b-email-error">
+                <p class="field-error" id="b-email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="b-phone"><span data-i18n="booking.phone">Telefon/Mobil</span> <span class="optional" data-i18n="booking.optional">(freiwillig)</span></label>
+                <input type="tel" id="b-phone" name="telefon" autocomplete="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="b-street"><span data-i18n="booking.street">Straße und Hausnummer</span> <span class="optional" data-i18n="booking.optional">(freiwillig)</span></label>
+              <input type="text" id="b-street" name="strasse" autocomplete="address-line1">
+            </div>
+            <div class="field-row field-row--zip">
+              <div class="field">
+                <label for="b-zip" data-i18n="booking.zip">PLZ</label>
+                <input type="text" id="b-zip" name="plz" autocomplete="postal-code">
+              </div>
+              <div class="field">
+                <label for="b-city" data-i18n="booking.city">Ort</label>
+                <input type="text" id="b-city" name="ort" autocomplete="address-level2">
+              </div>
+            </div>
+            <div class="field">
+              <label for="b-message"><span data-i18n="booking.message">Ihre Nachricht</span> <span class="optional" data-i18n="booking.optional">(freiwillig)</span></label>
+              <textarea id="b-message" name="nachricht" rows="4" data-i18n-attr="placeholder:booking.messagePlaceholder" placeholder="Zum Beispiel Ihre Ankunftszeit oder Fragen zum Zimmer"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="field consent">
+            <label class="check">
+              <input type="checkbox" id="b-consent" name="datenschutz" required aria-describedby="b-consent-error">
+              <span><span data-i18n="booking.consent">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden. Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an info@haus-biehler.de widerrufen.</span><span class="req" aria-hidden="true"> *</span></span>
+            </label>
+            <p class="field-error" id="b-consent-error" hidden></p>
+          </div>
+
+          <!-- Spamschutz ohne Google reCAPTCHA: Menschen sehen dieses Feld nicht -->
+          <div class="hp" aria-hidden="true">
+            <label for="b-website">Website</label>
+            <input type="text" id="b-website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="form-error-summary" id="b-error-summary" role="alert" hidden></p>
+          <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="booking.submit">Anfrage senden</button>
+          <p class="form-note" data-i18n="booking.note">Die Anfrage ist unverbindlich. Die Felder mit * brauchen wir, um Ihnen antworten zu können.</p>
+        </form>
+
+        <div class="booking-done" id="booking-done" tabindex="-1" hidden>
+          <p class="proto-flag" data-i18n="booking.done.flag">Prototyp: Diese Anfrage wurde nicht verschickt.</p>
+          <h3 class="booking-done-title" id="booking-done-title">Vielen Dank!</h3>
+          <p data-i18n="booking.done.text">Ihre Anfrage ist bei uns angekommen. Wir schauen, ob Ihr Wunschzimmer frei ist, und melden uns so bald wie möglich bei Ihnen.</p>
+          <dl class="summary" id="booking-summary"></dl>
+          <div class="btn-row">
+            <button type="button" class="btn btn-ghost" id="booking-edit" data-i18n="booking.done.edit">Angaben ändern</button>
+            <button type="button" class="btn btn-primary" id="booking-new" data-i18n="booking.done.new">Neue Anfrage</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="booking-aside" aria-labelledby="booking-aside-title">
+        <div class="aside-card">
+          <h3 id="booking-aside-title" data-i18n="booking.aside.title">Lieber persönlich?</h3>
+          <p data-i18n="booking.aside.text">Rufen Sie uns einfach an – wir beraten Sie gern.</p>
+          <a class="btn btn-ghost btn-block" href="tel:+49882173892"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="phone.display">08821 73892</span></a>
+          <a class="aside-mail" href="mailto:info@haus-biehler.de"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>info@haus-biehler.de</a>
+          <ul class="checklist checklist--small">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="booking.aside.p1">Unverbindlich anfragen, persönliche Antwort</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="prices.min">Mindestaufenthalt 2 Nächte</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="booking.aside.p3">Ab 14 Nächten nur 35&nbsp;€ pro Person und Nacht</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="prices.single">Doppelzimmer zur Einzelbelegung auf Anfrage</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ Anreise & Umgebung ============ -->
+  <!-- Wegbeschreibungen aus der bestehenden Anfahrt-Seite; Ausflugsziele mit Wikipedia abgeglichen (13.11.2026). -->
+  <section class="section arrive" id="anreise" aria-labelledby="arrive-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="arrive.eyebrow">Anreise &amp; Umgebung</p>
+        <h2 id="arrive-title" data-i18n="arrive.title">So finden Sie zu uns</h2>
+        <p class="section-sub" data-i18n="arrive.sub">Sonnenbergstraße 4, mitten in Alt-Partenkirchen: Vom Bahnhof sind es rund 15 Minuten zu Fuß, und zur Bushaltestelle ist es nur ein Katzensprung.</p>
+      </header>
+
+      <div class="arrive-grid">
+        <div class="routes">
+          <details class="route" open>
+            <summary><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-train"/></svg></span><span data-i18n="arrive.train.title">Mit der Bahn</span></summary>
+            <p class="route-lead" data-i18n="arrive.train.lead">Ab Bahnhof Garmisch-Partenkirchen sind es rund 15 Minuten zu Fuß:</p>
+            <ol class="route-steps">
+              <li data-i18n="arrive.train.s1">der Bahnhofstraße Richtung Partenkirchen folgen</li>
+              <li data-i18n="arrive.train.s2">geradeaus weiter in die Ludwigstraße</li>
+              <li data-i18n="arrive.train.s3">nach ca. 500&nbsp;m links in die Sonnenbergstraße</li>
+              <li data-i18n="arrive.goal">nach ca. 60&nbsp;m liegt das Gästehaus auf der rechten Seite</li>
+            </ol>
+            <p class="route-alt" data-i18n="arrive.train.alt">Oder bequem mit dem Ortsbus (Linie 1 und 2) oder dem Taxi.</p>
+          </details>
+          <details class="route">
+            <summary><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg></span><span data-i18n="arrive.munich.title">Mit dem Auto aus Richtung München</span></summary>
+            <ol class="route-steps">
+              <li data-i18n="arrive.munich.s1">am Ende der A95 weiter auf der B2</li>
+              <li data-i18n="arrive.munich.s2">durch den Tunnel an Farchant vorbei</li>
+              <li data-i18n="arrive.munich.s3">bis zur Ortsmitte Partenkirchen</li>
+              <li data-i18n="arrive.munich.s4">links in die Ludwigstraße abbiegen</li>
+              <li data-i18n="arrive.munich.s5">nach ca. 500&nbsp;m links in die Sonnenbergstraße</li>
+              <li data-i18n="arrive.goal">nach ca. 60&nbsp;m liegt das Gästehaus auf der rechten Seite</li>
+            </ol>
+          </details>
+          <details class="route">
+            <summary><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg></span><span data-i18n="arrive.south.title">Mit dem Auto aus Richtung Innsbruck / Mittenwald</span></summary>
+            <ol class="route-steps">
+              <li data-i18n="arrive.south.s1">der B2 folgen</li>
+              <li data-i18n="arrive.south.s2">an der ersten Ampel rechts in die Mittenwalder Straße, die in die Ludwigstraße übergeht</li>
+              <li data-i18n="arrive.south.s3">nach ca. 500&nbsp;m rechts in die Sonnenbergstraße</li>
+              <li data-i18n="arrive.goal">nach ca. 60&nbsp;m liegt das Gästehaus auf der rechten Seite</li>
+            </ol>
+          </details>
+        </div>
+
+        <aside class="arrive-card">
+          <p class="arrive-address"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="arrive.address"><strong>Gästehaus Biehler</strong><br>Sonnenbergstraße 4<br>82467 Garmisch-Partenkirchen</span></p>
+          <!-- Nur Links, keine eingebettete Karte: So werden beim Laden keine Daten an Google oder OpenStreetMap geschickt. -->
+          <a class="btn btn-primary btn-block" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sonnenbergstra%C3%9Fe%204%2C%2082467%20Garmisch-Partenkirchen" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg><span data-i18n="arrive.route">Route planen</span></a>
+          <a class="arrive-osm" href="https://www.openstreetmap.org/search?query=Sonnenbergstra%C3%9Fe%204%2C%2082467%20Garmisch-Partenkirchen" target="_blank" rel="noopener" data-i18n="arrive.osm">Auf OpenStreetMap ansehen</a>
+          <div class="arrive-bus">
+            <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bus"/></svg></span>
+            <p data-i18n="arrive.bus"><strong>Vor Ort ohne Auto:</strong> Mit der Kurkarte fahren Sie im Ortsbus kostenlos – und die Haltestelle ist nur einen Katzensprung entfernt.</p>
+          </div>
+        </aside>
+      </div>
+
+      <h3 class="sub-head" data-i18n="arrive.nearby.title">Rund ums Haus</h3>
+      <ul class="nearby">
+        <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-sign"/></svg></span><div><strong data-i18n="nearby.wank.title">Wanderwege am Wank</strong><p data-i18n="nearby.wank.text">Die Wege rund um den Wank (1.780&nbsp;m) beginnen ganz in der Nähe.</p></div></li>
+        <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-church"/></svg></span><div><strong data-i18n="nearby.anton.title">Wallfahrtskirche St.&nbsp;Anton</strong><p data-i18n="nearby.anton.text">Die Wallfahrtskirche liegt oberhalb von Partenkirchen – ein schöner Spaziergang.</p></div></li>
+        <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-houses"/></svg></span><div><strong data-i18n="nearby.ludwig.title">Historische Ludwigstraße</strong><p data-i18n="nearby.ludwig.text">Partenkirchens alte Hauptstraße mit ihren bemalten Fassaden.</p></div></li>
+        <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-museum"/></svg></span><div><strong data-i18n="nearby.museum.title">Museum Werdenfels</strong><p data-i18n="nearby.museum.text">Das Heimatmuseum in der Ludwigstraße erzählt die Geschichte des Werdenfelser Landes.</p></div></li>
+        <li><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-mug"/></svg></span><div><strong data-i18n="nearby.inns.title">Gasthäuser in fünf Minuten</strong><p data-i18n="nearby.inns.text">Traditionsbewusst, mit bayerischen Schmankerln, Musik und Schuhplattlern.</p></div></li>
+      </ul>
+
+      <h3 class="sub-head" data-i18n="arrive.trips.title">Ausflugstipps</h3>
+      <p class="trips-intro" data-i18n="arrive.trips.intro">Ein paar Klassiker, die Sie von uns aus gut erreichen:</p>
+      <div class="trips">
+        <article class="trip">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr5-768x512.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr5-300x200.jpg 300w, https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr5-768x512.jpg 768w"
+               sizes="(min-width: 960px) 270px, (min-width: 640px) 45vw, 100vw" width="800" height="533" loading="lazy" decoding="async"
+               data-i18n-attr="alt:trip.jump.img" alt="Skispringer im Flug über Garmisch-Partenkirchen">
+          <div class="trip-body">
+            <h4 data-i18n="trip.jump.title">Neujahrsspringen</h4>
+            <p data-i18n="trip.jump.text">Am 1. Januar springt im Olympia-Skistadion die Weltspitze – das zweite Springen der Vierschanzentournee. Nicht weit vom Stadion liegt die Partnachklamm: 700 Meter lang und das ganze Jahr über tagsüber begehbar.</p>
+          </div>
+        </article>
+        <article class="trip">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr1-768x512.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr1-300x200.jpg 300w, https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr1-768x512.jpg 768w"
+               sizes="(min-width: 960px) 270px, (min-width: 640px) 45vw, 100vw" width="800" height="533" loading="lazy" decoding="async"
+               data-i18n-attr="alt:trip.zugspitze.img" alt="Verschneite Berggipfel über Garmisch-Partenkirchen im Herbst">
+          <div class="trip-body">
+            <h4 data-i18n="trip.zugspitze.title">Zugspitze</h4>
+            <p data-i18n="trip.zugspitze.text">Deutschlands höchster Berg (2.962&nbsp;m). Die Zahnradbahn startet in Garmisch gleich neben dem Bahnhof; vom Eibsee geht es auch mit der Seilbahn hinauf.</p>
+          </div>
+        </article>
+        <article class="trip">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr4-768x513.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr4-300x200.jpg 300w, https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr4-768x513.jpg 768w"
+               sizes="(min-width: 960px) 270px, (min-width: 640px) 45vw, 100vw" width="800" height="534" loading="lazy" decoding="async"
+               data-i18n-attr="alt:trip.eibsee.img" alt="Der Eibsee mit kleinen Inseln, dahinter die Berge">
+          <div class="trip-body">
+            <h4 data-i18n="trip.eibsee.title">Eibsee</h4>
+            <p data-i18n="trip.eibsee.text">Der Bergsee unterhalb der Zugspitze, neun Kilometer südwestlich von Garmisch-Partenkirchen. Die Zugspitzbahn hält am Eibsee.</p>
+          </div>
+        </article>
+        <article class="trip">
+          <img src="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr2-768x510.jpg"
+               srcset="https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr2-300x199.jpg 300w, https://www.haus-biehler.de/wp-content/uploads/2017/03/impressionen-garmisch-partenkirchenr2-768x510.jpg 768w"
+               sizes="(min-width: 960px) 270px, (min-width: 640px) 45vw, 100vw" width="800" height="531" loading="lazy" decoding="async"
+               data-i18n-attr="alt:trip.alpspix.img" alt="Die Aussichtsplattform AlpspiX mit Besuchern hoch über dem Tal">
+          <div class="trip-body">
+            <h4 data-i18n="trip.alpspix.title">AlpspiX</h4>
+            <p data-i18n="trip.alpspix.text">Die Aussichtsplattform am Osterfelderkopf ragt rund 1.000 Meter über dem Höllental ins Freie. Hinauf geht’s mit der Alpspitzbahn – im Winter mitten im Skigebiet Garmisch-Classic.</p>
+          </div>
+        </article>
+      </div>
+      <p class="trips-note" data-i18n="arrive.trips.note">Noch mehr Tipps? Fragen Sie uns beim Frühstück – wir verraten Ihnen gern unsere Lieblingsplätze.</p>
+      <p class="photo-credit" data-i18n="arrive.trips.credit">Landschaftsfotos aus dem bestehenden Auftritt (Fotolia, GaPa Tourismus).</p>
+    </div>
+  </section>
+
+  <!-- ============ Kontakt ============ -->
+  <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-text">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+          <h2 id="contact-title" data-i18n="contact.title">Wir freuen uns auf Sie</h2>
+          <p data-i18n="contact.text">Rufen Sie uns einfach an oder schreiben Sie uns eine E-Mail mit Ihren Wunschterminen.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="tel:+49882173892"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="phone.display">08821 73892</span></a>
+            <a class="btn btn-ghost" href="mailto:info@haus-biehler.de"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="contact.email">E-Mail schreiben</span></a>
+          </div>
+        </div>
+        <address class="contact-address">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span data-i18n="contact.address"><strong>Gästehaus Biehler</strong><br>Familie Biehler<br>Sonnenbergstraße 4<br>82467 Garmisch-Partenkirchen</span>
+        </address>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="brand-name">Haus Biehler</p>
+      <p data-i18n="footer.tagline">Ihr Gästehaus in Garmisch-Partenkirchen – familiengeführt in dritter Generation.</p>
+    </div>
+    <div>
+      <h2 class="footer-title" data-i18n="footer.contactTitle">Kontakt</h2>
+      <p data-i18n="footer.contactBlock">Sonnenbergstraße 4<br>82467 Garmisch-Partenkirchen<br>
+        <a href="tel:+49882173892">08821 73892</a><br>
+        <a href="mailto:info@haus-biehler.de">info@haus-biehler.de</a></p>
+    </div>
+    <div>
+      <h2 class="footer-title" data-i18n="footer.infoTitle">Informationen</h2>
+      <ul class="footer-links">
+        <li><a href="#zimmer" data-i18n="nav.rooms">Zimmer</a></li>
+        <li><a href="#preise" data-i18n="nav.prices">Preise</a></li>
+        <li><a href="#anreise" data-i18n="nav.travel">Anreise</a></li>
+        <li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li>
+        <li><a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2026 Gästehaus Biehler · Garmisch-Partenkirchen</p>
+      <p class="draft-note" data-i18n="footer.draft">Entwurf für Familie Biehler – nicht öffentlich</p>
+    </div>
+  </div>
+</footer>
+
+<div class="action-bar is-hidden" role="region" data-i18n-attr="aria-label:bar.aria" aria-label="Schnellkontakt">
+  <a class="btn btn-ghost" href="tel:+49882173892"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar.call">Anrufen</span></a>
+  <a class="btn btn-primary" href="#anfrage" data-i18n="cta.enquire">Anfragen</a>
+</div>
+
+<!-- Am Ende des Body, damit die englische Fassung vor dem ersten Zeichnen steht -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>
