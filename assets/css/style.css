@@ -226,40 +226,39 @@ html:not(.js) .lang-switch { display: none; }
 
 .hero-main img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  object-position: 50% 25%;
+  object-position: 50% 50%;
   background: var(--rose-100);
 }
-.hero-side { display: none; }
 
 .hero-text {
   position: relative;
-  margin: -4.25rem .75rem 0;
-  padding: 1.6rem 1.35rem 1.5rem;
+  margin: -2.25rem .75rem 0;
+  padding: 1.3rem 1.25rem 1.3rem;
   background: var(--paper);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 .hero-text h1 {
-  font-size: clamp(1.75rem, 1.3rem + 2.2vw, 3rem);
+  font-size: clamp(1.6rem, 1.25rem + 1.8vw, 2.7rem);
   font-weight: 500;
-  margin-bottom: .6rem;
+  margin-bottom: .5rem;
 }
 .script {
   display: block;
   font-family: var(--font-script);
   font-weight: 400;
-  font-size: 1.45em;
+  font-size: 1.3em;
   line-height: 1.35;
   letter-spacing: 0;
   color: var(--rose-deep);
   margin-bottom: .1em;
 }
-.hero-text .lead { margin-bottom: 1rem; }
+.hero-text .lead { font-size: 1.05rem; margin-bottom: .85rem; }
 .hero-price {
   display: inline-flex; align-items: center; gap: .75rem;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1rem;
   padding: .55rem 1.1rem .55rem .95rem;
   background: var(--tile-50);
   border-radius: 14px;
@@ -270,6 +269,7 @@ html:not(.js) .lang-switch { display: none; }
 .hero-text .btn-row .btn { flex: 1 1 auto; }
 
 /* ---------- Willkommen ---------- */
+.welcome { padding-top: clamp(2.25rem, 1.25rem + 3vw, 4.5rem); }
 .welcome-grid { display: grid; gap: 2.5rem; }
 
 .welcome-media { position: relative; padding-bottom: 2.5rem; }
@@ -590,7 +590,7 @@ html:not(.js) .lang-switch { display: none; }
    Ab Tablet
    ========================================================================== */
 @media (min-width: 640px) {
-  .hero-text { margin-inline: 1.5rem; padding: 2rem 2rem 1.8rem; }
+  .hero-text { margin-inline: 1.5rem; padding: 1.6rem 1.8rem 1.5rem; }
   .hero-text .btn-row .btn { flex: 0 0 auto; }
   .facts { grid-template-columns: 1fr 1fr; }
   .room-jump { display: flex; flex-wrap: wrap; }
@@ -657,41 +657,26 @@ html:not(.js) .lang-switch { display: none; }
 
   .action-bar { display: none; }
 
-  /* Hero: Text links, Bildcollage rechts */
-  .hero { padding: 2.75rem 0 1.5rem; }
+  /* Hero: Text links, Panorama rechts – so kurz, dass der Inhalt darunter schon zu sehen ist */
+  .hero { padding: 1.75rem 0 .5rem; }
   .hero-grid {
     display: grid;
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
     grid-template-areas: "text media";
-    gap: 3.5rem;
+    gap: 3rem;
     align-items: center;
     max-width: var(--container);
     margin-inline: auto;
     padding-inline: 2rem;
   }
-  .hero-media {
-    grid-area: media;
-    display: grid; grid-template-columns: 1fr 1fr; gap: .8rem;
-  }
-  .hero-main { grid-column: 1 / -1; }
-  .hero-main img {
-    aspect-ratio: 15 / 8;
-    object-position: 50% 0%;
-    border-radius: var(--radius-lg);
-  }
-  .hero-side { display: block; }
-  .hero-side img {
-    width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-    border-radius: var(--radius);
-    background: var(--rose-100);
-  }
-  .hero-side--detail img { object-position: 62% 50%; }
+  .hero-media { grid-area: media; }
+  .hero-main img { aspect-ratio: 16 / 9; border-radius: var(--radius-lg); }
   .hero-text {
     grid-area: text;
     margin: 0; padding: 0;
     background: none; box-shadow: none; border-radius: 0;
   }
-  .hero-text h1 { font-size: clamp(2.3rem, 1.2rem + 1.9vw, 3.1rem); }
+  .hero-text h1 { font-size: clamp(2.1rem, 1.1rem + 1.6vw, 2.7rem); }
 
   /* Willkommen */
   .welcome-grid {
@@ -974,6 +959,12 @@ html:not(.js) .action-bar.is-hidden { transform: none; }   /* ohne JavaScript im
   padding: 1.3rem 1.25rem 1.4rem;
   background: var(--rose-100); border-radius: var(--radius-lg);
 }
+.arrive-photo { margin: 0 0 .2rem; }
+.arrive-photo img {
+  width: 100%; aspect-ratio: 2 / 1; object-fit: cover; object-position: 50% 30%;
+  border-radius: 14px; background: var(--rose-200);
+}
+.arrive-photo figcaption { margin-top: .45rem; font-size: .85rem; line-height: 1.4; color: var(--ink-soft); }
 .arrive-address { display: flex; gap: .7rem; margin: 0 0 .2rem; line-height: 1.55; }
 .arrive-address .icon { width: 24px; height: 24px; margin-top: .15rem; color: var(--rose-deep); }
 .arrive-osm { justify-self: center; font-size: .9rem; font-weight: 600; }

@@ -29,9 +29,7 @@ window.HB_I18N = {
     'menu.close': 'Close menu',
 
     /* Hero */
-    'hero.img.house': 'Gästehaus Biehler on Sonnenbergstraße: a white house with a traditional painted façade, green shutters and a dark wooden balcony',
-    'hero.img.room': 'Cosy double room with a wooden ceiling and red polka-dot bed linen',
-    'hero.img.lamp': 'Antler chandelier above a bed',
+    'hero.img': 'View over Garmisch-Partenkirchen towards the snow-capped peaks around the Zugspitze',
     'hero.title': '<span class="script" lang="de">Grüß Gott</span> and a warm welcome to Gästehaus Biehler',
     'hero.lead': 'Four cosy double rooms in the heart of old Partenkirchen – and breakfast every morning in our Stube by the green tiled stove.',
     'price.40': '€40',
@@ -233,6 +231,8 @@ window.HB_I18N = {
     'arrive.south.s1': 'follow the B2',
     'arrive.south.s2': 'at the first traffic lights, turn right into Mittenwalder Straße, which becomes Ludwigstraße',
     'arrive.south.s3': 'after about 500&nbsp;m, turn right into Sonnenbergstraße',
+    'arrive.photo.img': 'Gästehaus Biehler on Sonnenbergstraße: a white house with a traditional painted façade, green shutters and a dark wooden balcony',
+    'arrive.photo.caption': 'This is how you’ll recognise us: our house with the painted façade.',
     'arrive.address': '<strong>Gästehaus Biehler</strong><br>Sonnenbergstraße 4<br>82467 Garmisch-Partenkirchen<br>Germany',
     'arrive.route': 'Plan your route',
     'arrive.osm': 'View on OpenStreetMap',
